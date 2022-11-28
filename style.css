@@ -1,0 +1,332 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.h-start {
+  background-color: #13183F;
+  width: 140px;
+  height: 48px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 28px;
+  font-weight: 700;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.opening {
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 50px;
+    color: #13183F;
+    font-weight: 800;
+    margin-top: 22px;
+    margin-bottom: 26px;
+}
+
+.p-one {
+    margin-bottom: 24px;
+    color: #83869A;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.button-one {
+    width: 167px;
+    height: 56px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    background-image: linear-gradient(#FF6F48, #F02AA6);
+    border: none;
+    border-radius: 31.5px;
+}
+
+.hero {
+    margin: 0 auto;
+    width: 327px;
+    height: 301px;
+    display: none;
+} 
+
+.courses {
+    width: 343px;
+    height: 120px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    color: white;
+    background-image: linear-gradient(#FF6F48, #F02AA6);
+    padding: 24px 29px 32px 28px;
+}
+
+.boxes {
+    display: grid;
+    row-gap: 40px;
+    grid-template-rows: minmax(120px, auto) repeat(5, 1fr);
+    justify-items: center;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    width: 343px;
+    height: 259px;
+    padding: 56px 29px 32px 28px;
+    border-radius: 10px;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: -10%;
+    left: 10%;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 25.2px;
+    margin-bottom: 16px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #83869A;
+}
+
+.box-button {
+    color: #F74780;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    border: none;
+    background-color: white;
+    margin-top: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13183F;
+    margin-top: 80px;
+    padding: 36px 16px 36px 16px;
+}
+
+.start-button {
+    color:white;
+    font-weight: 700;
+    font-size: 16px;
+    background-image: linear-gradient(#4851FF, #F02AA6);
+    width: 140px;
+    height: 48px;
+    border-radius: 28px;
+    border: none;
+}
+
+.skilled {
+    color: white;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    body {
+        background-image: url(assets/image-hero-tablet.png);
+        background-position: top -100px right -300px;
+        background-repeat: no-repeat;
+    }
+    
+    .courses {
+        width: 339px;
+        height: 259px;
+        padding: 64px 32px 138px 32px;
+    }
+
+    header {
+        padding: 24px 40px 0 39px;
+    } 
+
+    .opening {
+        margin-top: 105px;
+        margin-bottom: 186px;
+        max-width: 52%;
+        margin-left: 39px;
+    }
+
+.boxes {
+    row-gap: 56px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    margin-left: 39px;
+    margin-right: 40px;
+    column-gap: 10px;
+    row-gap: 56px;
+}
+
+.box { 
+    width: 340px;
+    height: 259px;
+    padding: 56px 21px 32px 32px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    position: relative;
+}
+
+footer {
+    margin-top: 86px;
+    padding: 36px 39px 36px 40px;
+ }
+}
+
+@media screen and (min-width: 1440px) {
+    .boxes {
+        column-gap: 30px;
+        row-gap: 80px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        margin-left: 165px;
+        margin-right: 165px;
+        }
+
+
+    .opening {
+        margin-top: 178px;
+        margin-bottom: 226px;
+        max-width: 457px;
+        margin-left: 165px;
+    }
+
+h1 {
+    font-size: 56px;
+    line-height: 70.56px;
+    margin-bottom: 29px;
+  }
+
+.p-one {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 445px;
+    margin-bottom: 40px;
+}
+
+.button-one {
+    height: 63px;
+    font-size: 18px;
+}
+
+.button-one:hover {
+    cursor: pointer;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+ body {
+    background-image: url(assets/image-hero-desktop.png);
+    background-position: top -150px right -350px;
+    background-repeat: no-repeat;
+    }
+
+header {
+    padding: 29px 165px 0 165px;
+}
+
+.h-start {
+    width: 167px;
+    height: 56px;
+    font-size: 18px;
+}
+
+.h-start:hover {
+    cursor: pointer;
+    background-color: #666CA3;
+}
+
+footer {
+    margin-top: 140px;
+    padding: 32px 165px 32px 165px;
+}
+    
+.courses {
+   width: 350px;
+   height: 322px;
+   padding: 64px 32px 138px 32px;
+   }
+
+.box {
+    width: 350px;
+    height: 322px;
+    padding: 64px 32px 40px 32px;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 30.24px;
+    margin-bottom: 24px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.courses {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.start-button {
+    width: 167px;
+    height: 56px;
+    font-size: 18px;
+}
+
+.start-button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg,#4851FF -54.32%,#F02AA6 100%);
+}
+
+.box-button:hover {
+    cursor: pointer;
+    color: #FFA7C3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        display: block;
+    }
+}
